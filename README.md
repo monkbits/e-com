@@ -1,4 +1,4 @@
 # E-COM
 
-It is an E-commerce app.\n
+It is an E-commerce app.
 This project requires a .env file

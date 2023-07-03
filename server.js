@@ -3,7 +3,7 @@ import colors from 'colors';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 import connectDB from './config/db.js';
-
+import authRoute from './routes/authRoute.js';
 
 //configure dotenv
 dotenv.config(); // agar env file root ke alawa kahi aur he to config ke andr object dena { path: ''}
@@ -17,6 +17,9 @@ const app = express();
 //middleware
 app.use(express.json())//request aur response me app json data bhi bhej skte hai pehle hhim body parser ka use krte the ab express me by default ye aatahai.
 app.use(morgan('dev'));
+
+//routes
+app.use('api/V1/auth', authRoute);
 
 // rest api
 app.get('/', (req, res) => {
