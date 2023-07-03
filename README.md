@@ -1,3 +1,6 @@
 #E-com
 
-This project requires a .env file
+It is an E-commerce app.
+This project requires a .env file 
+
+
