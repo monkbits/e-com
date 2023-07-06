@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const userSchema = new mongoose.schema({
+const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -29,4 +29,4 @@ const userSchema = new mongoose.schema({
     }
 }, { timestamps: true })
 
-export default mongoose.model('user', userSchema); // user collection banaya tha db mai
+export default mongoose.model('users', userSchema); // user collection banaya tha db mai

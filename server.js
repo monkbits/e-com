@@ -19,7 +19,7 @@ app.use(express.json())//request aur response me app json data bhi bhej skte hai
 app.use(morgan('dev'));
 
 //routes
-app.use('api/V1/auth', authRoute);
+app.use('/api/v1/auth', authRoute);
 
 // rest api
 app.get('/', (req, res) => {
